@@ -15,7 +15,7 @@ namespace tutorial1
             if (response.IsSuccessStatusCode)
             {
                 var htmlcontent = await response.Content.ReadAsStringAsync();
-                var regex = new Regex("[a-z0-9]+[a-z0-9]*@[a-z0-9]+\\.[a-z]+", RegexOptions.IgnoreCase);
+                var regex = new Regex("[a-z0-9-]+[a-z0-9]*@[a-z0-9-]+\\.[a-z]+", RegexOptions.IgnoreCase);
                 var matches = regex.Matches(htmlcontent);
                 foreach (var emailAdress in matches)
                 {
