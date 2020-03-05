@@ -20,6 +20,7 @@ namespace tutorial1
                 foreach (var emailAdress in matches)
                 {
                     Console.WriteLine(emailAdress);
+                    
                 }
             }
             Console.ReadKey();
